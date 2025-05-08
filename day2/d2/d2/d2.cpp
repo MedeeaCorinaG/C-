@@ -2,7 +2,12 @@
 
 #include <iostream>
 using namespace std;
+void swap(int* a, int* b) {
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 
+}
 int main()
 {
 	/*int a = 10;
@@ -19,6 +24,11 @@ int main()
 	cout << "Valoarea lui a: " << a << endl;
 	cout << "Valoarea prin pointer: " << *p << endl;
 	*/
+	int x = 5, y = 10;
+
+	cout << "Inainte de swap: x = " << x << ", y = " << y << endl;
+	swap(&x, &y);
+	cout << "Dupa swap: x = " << x << ", y = " << y << endl;
 
 
 }
